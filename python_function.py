@@ -25,18 +25,6 @@ def add_numbers(n1, n2):
 
 
 # Closure is function object that remembered value in enclosing scopes if they are not present
-def multiply_outer(n):
-    def multiply_inner(x):
-        return x * n
-
-    return multiply_inner
-
-
-val3 = multiply_outer(3)
-val5 = multiply_outer(5)
-print(val3(9))
-print(val5(3))
-print("the value of ", val5(val3(2)))
 
 
 # example for closure
@@ -137,6 +125,12 @@ hello(quite)
 a = [[1, 4], [2, 6], [8, 9]]
 a.sort(key=lambda x: x[1])
 print(a)
+
+# examples
+def my_func(n):
+    return lambda a: a * n
+val = my_func(2)
+print(val(11))
 
 
 # CALLER AND CALEE FUNCTION
