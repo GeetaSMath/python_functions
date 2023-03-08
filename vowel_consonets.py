@@ -1,11 +1,14 @@
-def is_vowel_or_consonant(alphabet):
-    # Check whether an alphabet is a vowel or a consonant
-    vowels = ['a', 'e', 'i', 'o', 'u']
+# Check whether an alphabet is a vowel or a consonant
 
-    if alphabet.lower() in vowels:
-        return f"{alphabet} is a vowel"
-    else:
-        return f"{alphabet} is a consonant"
-alphabet = 'a'
-result = is_vowel_or_consonant(alphabet)
-print(result)
+def is_vowel_or_consonant(alphabet):
+    try:
+        vowels = "aeiou"
+        return f"{alphabet} is a vowel" if alphabet.lower() in vowels else f"{alphabet} is a consonant"
+    except Exception as e:
+        print(str(e))
+
+
+if __name__ == '__main__':
+    alphabet = input("Enter the user alphabets")
+    result = is_vowel_or_consonant(alphabet)
+    print(result)
