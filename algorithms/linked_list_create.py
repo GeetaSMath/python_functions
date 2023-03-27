@@ -1,3 +1,8 @@
+#linked list creation
+# node will be having data address and pointing head to first node
+# what is linked list
+
+
 class Node:
     #creation of node
     def __init__(self, data):

@@ -1,0 +1,20 @@
+class- is template or blue print we can define member or methods or functions
+object- real word entity
+inheritance- we can re-use the code
+polymorphism - we can use as many and show behaviour
+encapsulation - data or variable we can bind ex class
+abstraction - like security
+
+CLASS - blue print for object
+SYNTAX- class class_name:
+        #methods
+        #varible
+
+OBJECT - is real entity that works o class data
+SYNTAX - object_name=class_name()
+
+class A:
+    pass #if there is no block of code or nothing to perform
+
+obj=A()
+
