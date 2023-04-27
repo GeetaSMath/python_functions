@@ -9,7 +9,7 @@
 # vol_shell(3, 800) ➞ 2144660471.753
 
 def vol_shell(r1, r2):
-    pi = 3.14159265359
+    pi = 3.1415926535
     volume = (4 / 3) * pi * ((r2 ** 3) - (r1 ** 3))
     return round(volume, 3)
 
