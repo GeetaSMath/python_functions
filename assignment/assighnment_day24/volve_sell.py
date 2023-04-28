@@ -19,3 +19,29 @@ print(vol_shell(7, 2))
 print(vol_shell(3, 800))
 
 
+def dict_val(dict_val):
+    print(dict_val)
+    return list(dict_val.values())
+
+
+age = {
+    "a": 10,
+    "b": 20,
+    "c": 30
+}
+print(dict_val(age))
+
+from math import pi
+
+r = float(input("Input the radius of the circle : "))
+print("The area of the circle with radius " + str(r) + " is: " + str(pi * r ** 2))
+num = int(input("Enter an integer: "))
+rev = 0
+
+while num > 0:
+    rev = rev * 10 + num % 10
+    print(rev,"rev num")
+    num = num // 10
+    print(num, "num is")
+
+print("The reversed integer is:", rev)
